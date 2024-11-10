@@ -1,0 +1,34 @@
+{
+    "version": "0.0.1",
+    "configurations": [
+      {
+        "type": "java",
+        "name": "Bookplace",
+        "request": "launch",
+        "mainClass": "org.bookplace.Bookplace",
+        "projectName": "bookplace",
+        "envFile": "${workspaceFolder}/.env"
+      },
+      {
+        "name": "Spring Boot: Dev",
+        "type": "java",
+        "request": "launch",
+        "mainClass": "org.bookplace.Bookplace",
+        "projectName": "Bookplace",
+        "args": "--spring.profiles.active=dev",
+        "env": {
+          "SPRING_PROFILES_ACTIVE": "dev"
+        }
+      },
+      {
+        "name": "Spring Boot: Prd",
+        "type": "java",
+        "request": "launch",
+        "mainClass": "org.bookplace.Bookplace",
+        "projectName": "Bookplace",
+        "args": "--spring.profiles.active=prd",
+        "envFile": "${workspaceFolder}/.env"
+      }
+    ]
+  }
+  
